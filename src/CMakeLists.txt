@@ -264,7 +264,7 @@ else()
     endif()
 
     if (MINGW)
-        target_link_libraries( exiv2lib PRIVATE ${REGX_LIBRARIES} )
+        target_link_libraries( exiv2lib PRIVATE ${REGEX_LIBRARIES} )
     endif()
 
     target_link_libraries( exiv2lib PRIVATE Threads::Threads)
@@ -319,7 +319,7 @@ if(EXIV2_BUILD_EXIV2_COMMAND)
     endif()
     
     if (MINGW)
-        target_link_libraries( exiv2 PRIVATE ${REGX_LIBRARIES} )
+        target_link_libraries( exiv2 PRIVATE ${REGEX_LIBRARIES} )
     endif()
 
     # modify source lists to suit environment
