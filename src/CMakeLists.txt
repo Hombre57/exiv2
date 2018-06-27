@@ -261,6 +261,9 @@ else()
 
     if (CYGWIN OR MINGW)
         target_link_libraries( exiv2lib PRIVATE  psapi ws2_32 )
+    endif()
+
+    if (MINGW)
         target_link_libraries( exiv2lib PRIVATE ${REGX_LIBRARIES} )
     endif()
 
